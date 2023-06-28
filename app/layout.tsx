@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { AuthenticationProvider } from '../providers/AuthenticationProvider'
-import { CubiesProvider } from '@/providers/CubiesProvider'
+import { AuthenticationProvider } from '../contexts/AuthenticationContext'
+import { CubiesProvider } from '@/contexts/CubiesContext'
 
 const inter = Inter({ subsets: ['latin'] })
 

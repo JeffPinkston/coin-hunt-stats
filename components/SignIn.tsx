@@ -15,7 +15,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { Copyright } from './Copywrite';
-import { useAuthenticationContext } from '@/providers/AuthenticationProvider';
+import { useAuthenticationContext } from '@/contexts/AuthenticationContext';
 
 export default function SignIn() {
   const {login} = useAuthenticationContext()
