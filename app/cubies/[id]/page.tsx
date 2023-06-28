@@ -13,13 +13,13 @@ export async function generateStaticParams() {
 
 }
 
-async function getCubie(id: string) {
-    const res = await fetch(`http://localhost:3001/cubies/${id}`)
-    return res.json()
-}
+// async function getCubie(id: string) {
+//     const res = await fetch(`http://localhost:3001/cubies/${id}`)
+//     return res.json()
+// }
 
 export default async function Page({ params }: { params: { id: string }}) {
-    const selectedCubie = await getCubie(params.id)
+    const { selectedCubie } = useCubiesContext()
     return (
         <Box sx={{
             display: 'flex',

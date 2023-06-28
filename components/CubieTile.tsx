@@ -1,16 +1,13 @@
 "use client"
 import { useCubiesContext } from '@/contexts/CubiesContext'
-import { blueprintLoader, cubieLoader } from '@/utils/utils'
+import { cubieLoader } from '@/utils/utils'
 import { Box, Chip, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
-import Container from '@mui/material/Container'
-import Image from 'next/image'
 
 type Props = {
     cubie: Cubie
-    index: number
 }
 
-export default function CubieTile({ cubie, index }: Props) {
+export default function CubieTile({ cubie }: Props) {
     const { handleCubieSelection } = useCubiesContext()
     const selectCubie = () => {
         handleCubieSelection(cubie)

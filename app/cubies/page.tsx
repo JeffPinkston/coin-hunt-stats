@@ -19,7 +19,7 @@ export default function Page() {
                 <Grid2  container spacing={{ xs: 2, md: 3}} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {cubies.map((cubie, index) => (
                         <Grid2 xs={2} sm={4} md={4} key={index}>
-                            <CubieTile cubie={cubie} index={index} />
+                            <CubieTile cubie={cubie} />
                         </Grid2>
                     
                     ))}
